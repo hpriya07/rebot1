@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNOW YOUR CUSTOMER</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        p {
+            font-size: 18px;
+            color: #333;
+            padding: 20px;
+            border: 2px solid #4CAF50; /* Choose a color for the border */
+            border-radius: 8px;
+            background-color: #fff;
+            margin: 0; /* Remove default margin for the <p> element */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>KNOW YOUR CUSTOMER</h1>
+    <form action="/predict" method="POST">
+
+        <div class="form-group">
+            <label for="incomeLevel">Income Level:</label>
+            <select class="form-control" id="incomeLevel" name="incomeLevel" required>
+                <option value="high">High</option>
+                <option value="moderate">Moderate</option>
+                <option value="very high">Very High</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <select class="form-control" id="age" name="age" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <select class="form-control" id="location" name="location" required>
+                <option value="urban">Urban</option>
+                <option value="suburban">Suburban</option>
+                <option value="exclusive">Exclusive</option>
+                <option value="flexible">Flexible</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Property Price:</label>
+            <select class="form-control" id="price" name="price" required>
+                <option value="high">High</option>
+                <option value="moderate">Moderate</option>
+                <option value="affordable">Affordable</option>
+                <option value="varies">Varies</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="size">Property Size:</label>
+            <select class="form-control" id="size" name="size" required>
+                <option value="small">Small</option>
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="varies">Varies</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="type">Property Type:</label>
+            <select class="form-control" id="type" name="type" required>
+                <option value="investment">Investment</option>
+                <option value="normal">Normal</option>
+                <option value="double">Double</option>
+                <option value="flexible">Flexible</option>
+                <option value="luxury">Luxury</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="numberOfBedrooms">Number of Bedrooms:</label>
+            <input type="text" class="form-control" id="numberOfBedrooms" name="numberOfBedrooms" required>
+        </div>
+
+        <div class="form-group">
+            <label for="amenities">Property Amenities:</label>
+            <select class="form-control" id="amenities" name="amenities" required>
+                <option value="yes">Yes</option>
+                <option value="none">None</option>
+                <option value="important">Important</option>
+                <option value="flexible">Flexible</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="propertyCondition">Property Condition:</label>
+            <select class="form-control" id="propertyCondition" name="propertyCondition" required>
+                <option value="good">Good</option>
+                <option value="new">New</option>
+                <option value="renovated">Renovated</option>
+                <option value="flexible">Flexible</option>
+                <option value="high-end">High-end</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="buyingHistory">Buying History:</label>
+            <select class="form-control" id="buyingHistory" name="buyingHistory" required>
+                <option value="multiple">Multiple</option>
+                <option value="first">First</option>
+                <option value="transacted">Transacted</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="marketTrends">Market Trends:</label>
+            <select class="form-control" id="marketTrends" name="marketTrends" required>
+                <option value="active">Active</option>
+                <option value="mixed">Mixed</option>
+                <option value="not active">Not Active</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="interestRates">Interest Rates:</label>
+            <select class="form-control" id="interestRates" name="interestRates" required>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+            </select>
+        </div>
+
+        <input type="submit" name="submit" value="Submit" class="btn btn-success">
+    </form>
+
+</div>
+<div id="result" class="mt-3">
+        <!-- Result section -->
+        <h2>Predicted Buyer Class:</h2>
+        <p>{{ predicted_buyer }}</p>
+    </div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

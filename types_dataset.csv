@@ -1,0 +1,15 @@
+Income Level,Age,Location,Property Price,Property Size,Property Type,No of BR,Property Amenities,Property Condition,Buying History,Market Trends,Interest Rates,Type of Buyer
+high,1,urban,moderate,small,investment,1,none,good,multiple,active,low,investor
+moderate,1,suburban,affordable,medium,normal,3,yes,new,first,mixed,moderate,first time buyer
+high,2,urban,moderate,small,investment,1,none,good,multiple,active,low,investor
+moderate,1,suburban,affordable,medium,double,3,yes,new,first,mixed,moderate,first time buyer
+moderate,1,suburban,affordable,small,normal,3,yes,new,first,mixed,moderate,first time buyer
+high,3,urban,high,small,normal,2,yes,renovated,multiple,not active,low,downsizer
+high,3,urban,high,small,normal,1,important,renovated,multiple,not active,low,downsizer
+high,3,urban,high,small,normal,1,important,renovated,multiple,not active,low,downsizer
+very high,2,exclusive,high,large,luxury,5,important,high-end,multiple,active,low,luxury lover
+very high,1,exclusive,high,large,luxury,5,important,high-end,multiple,active,low,luxury lover
+very high,1,exclusive,high,large,luxury,6,important,high-end,multiple,active,low,luxury lover
+moderate,2,flexible,varies,varies,flexible,0,flexible,flexible,transacted,active,moderate,active buyer
+moderate,3,flexible,varies,varies,flexible,0,flexible,flexible,transacted,active,moderate,active buyer
+moderate,1,flexible,varies,varies,flexible,0,flexible,flexible,transacted,active,moderate,active buyer
